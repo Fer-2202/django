@@ -6,8 +6,7 @@ from django.db import models
 class paciente (models.Model):
     nombre_paciente = models.CharField(max_length=40,null=False)
     apellido_paciente = models.CharField(max_length=40,null=False)
-    edad_paciente = models.PositiveIntegerField()
-    sexo = models.CharField(max_length=10,null=False)
+    edad_paciente = models.CharField(max_length=10, null=False)
     direccion = models.CharField(max_length=50,null=False)
     correo = models.CharField(max_length=50,unique=True,null=False)
 
